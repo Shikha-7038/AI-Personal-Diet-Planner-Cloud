@@ -1,0 +1,2 @@
+# Optional - only needed when DB_BACKEND=firestore or STORAGE_BACKEND=firebase
+firebase-admin==6.5.0

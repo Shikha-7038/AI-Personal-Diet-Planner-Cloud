@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Demo Asha",
+    "email": "asha.demo@example.com",
+    "password": "DemoPass123",
+    "profile": {"sex": "female", "age": 24, "height": 162, "weight": 58,
+                "activity_level": "moderate", "dietary_preference": "vegetarian",
+                "goal": "weight_management", "allergies": ["nuts"]}
+  },
+  {
+    "name": "Demo Ravi",
+    "email": "ravi.demo@example.com",
+    "password": "DemoPass123",
+    "profile": {"sex": "male", "age": 29, "height": 176, "weight": 74,
+                "activity_level": "active", "dietary_preference": "general",
+                "goal": "fitness", "allergies": []}
+  },
+  {
+    "name": "Demo Meera",
+    "email": "meera.demo@example.com",
+    "password": "DemoPass123",
+    "profile": {"sex": "female", "age": 35, "height": 158, "weight": 63,
+                "activity_level": "light", "dietary_preference": "vegan",
+                "goal": "balanced", "allergies": ["dairy"]}
+  }
+]

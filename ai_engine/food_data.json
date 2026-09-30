@@ -1,0 +1,71 @@
+{
+  "_note": "Small DEMO food dataset. Values are rough per-serving estimates for education only - not a clinical nutrition database.",
+  "diet_rank": {"vegan": 0, "vegetarian": 1, "general": 2},
+  "meals": {
+    "breakfast": [
+      {"id": "b01", "name": "Vegetable poha with peanuts", "diet": "vegan", "allergens": ["nuts"], "kcal": 280, "p": 6, "c": 48, "f": 8},
+      {"id": "b02", "name": "Vegetable upma", "diet": "vegan", "allergens": ["gluten"], "kcal": 250, "p": 6, "c": 40, "f": 7},
+      {"id": "b03", "name": "Oats porridge with banana", "diet": "vegan", "allergens": [], "kcal": 290, "p": 9, "c": 52, "f": 5},
+      {"id": "b04", "name": "Moong dal chilla (2 pieces)", "diet": "vegan", "allergens": [], "kcal": 220, "p": 14, "c": 30, "f": 4},
+      {"id": "b05", "name": "Idli (3 pieces) with sambar", "diet": "vegan", "allergens": [], "kcal": 240, "p": 9, "c": 46, "f": 2},
+      {"id": "b06", "name": "Scrambled tofu with vegetables", "diet": "vegan", "allergens": ["soy"], "kcal": 180, "p": 15, "c": 6, "f": 11},
+      {"id": "b07", "name": "Banana-spinach smoothie with soy milk", "diet": "vegan", "allergens": ["soy"], "kcal": 210, "p": 8, "c": 36, "f": 4},
+      {"id": "b08", "name": "Whole-wheat toast with peanut butter", "diet": "vegan", "allergens": ["gluten", "nuts"], "kcal": 280, "p": 10, "c": 30, "f": 13},
+      {"id": "b09", "name": "Greek yogurt with mixed berries", "diet": "vegetarian", "allergens": ["dairy"], "kcal": 160, "p": 12, "c": 18, "f": 4},
+      {"id": "b10", "name": "Paneer paratha (1 piece)", "diet": "vegetarian", "allergens": ["dairy", "gluten"], "kcal": 380, "p": 15, "c": 40, "f": 17},
+      {"id": "b11", "name": "Masala omelette (2 eggs)", "diet": "general", "allergens": ["egg"], "kcal": 200, "p": 13, "c": 3, "f": 15},
+      {"id": "b12", "name": "Boiled eggs (2) with whole-wheat toast", "diet": "general", "allergens": ["egg", "gluten"], "kcal": 300, "p": 18, "c": 24, "f": 14}
+      
+    ],
+    "lunch": [
+      {"id": "l01", "name": "Dal tadka with brown rice", "diet": "vegan", "allergens": [], "kcal": 420, "p": 15, "c": 70, "f": 8},
+      {"id": "l02", "name": "Rajma with steamed rice", "diet": "vegan", "allergens": [], "kcal": 450, "p": 16, "c": 78, "f": 6},
+      {"id": "l03", "name": "Chole with 2 whole-wheat rotis", "diet": "vegan", "allergens": ["gluten"], "kcal": 480, "p": 17, "c": 76, "f": 10},
+      {"id": "l04", "name": "Quinoa vegetable bowl with chickpeas", "diet": "vegan", "allergens": [], "kcal": 430, "p": 16, "c": 62, "f": 12},
+      {"id": "l05", "name": "Tofu stir-fry with brown rice", "diet": "vegan", "allergens": ["soy"], "kcal": 430, "p": 22, "c": 52, "f": 14},
+      {"id": "l06", "name": "Mixed vegetable curry with 2 rotis", "diet": "vegan", "allergens": ["gluten"], "kcal": 380, "p": 10, "c": 62, "f": 9},
+      {"id": "l07", "name": "Paneer bhurji with 2 rotis", "diet": "vegetarian", "allergens": ["dairy", "gluten"], "kcal": 520, "p": 24, "c": 45, "f": 26},
+      {"id": "l08", "name": "Vegetable pulao with raita", "diet": "vegetarian", "allergens": ["dairy"], "kcal": 400, "p": 10, "c": 65, "f": 11},
+      {"id": "l09", "name": "Curd rice with cucumber salad", "diet": "vegetarian", "allergens": ["dairy"], "kcal": 330, "p": 10, "c": 52, "f": 8},
+      {"id": "l10", "name": "Grilled chicken with brown rice and salad", "diet": "general", "allergens": [], "kcal": 500, "p": 38, "c": 55, "f": 12},
+      {"id": "l11", "name": "Chicken curry with 2 rotis", "diet": "general", "allergens": ["gluten"], "kcal": 540, "p": 34, "c": 50, "f": 20},
+      {"id": "l12", "name": "Fish curry with steamed rice", "diet": "general", "allergens": ["fish"], "kcal": 470, "p": 30, "c": 55, "f": 14},
+      {"id": "l13", "name": "Egg curry with rice", "diet": "general", "allergens": ["egg"], "kcal": 480, "p": 22, "c": 58, "f": 16}
+    ],
+    "snack": [
+      {"id": "s01", "name": "Roasted chana (30 g)", "diet": "vegan", "allergens": [], "kcal": 120, "p": 6, "c": 18, "f": 2},
+      {"id": "s02", "name": "Apple with almonds", "diet": "vegan", "allergens": ["nuts"], "kcal": 160, "p": 4, "c": 22, "f": 8},
+      {"id": "s03", "name": "Fruit chaat", "diet": "vegan", "allergens": [], "kcal": 100, "p": 1, "c": 25, "f": 1},
+      {"id": "s04", "name": "Sprouts salad", "diet": "vegan", "allergens": [], "kcal": 130, "p": 9, "c": 20, "f": 1},
+      {"id": "s05", "name": "Roasted makhana (30 g)", "diet": "vegan", "allergens": [], "kcal": 105, "p": 3, "c": 22, "f": 1},
+      {"id": "s06", "name": "Hummus with cucumber and carrot sticks", "diet": "vegan", "allergens": [], "kcal": 140, "p": 5, "c": 14, "f": 7},
+      {"id": "s07", "name": "Mixed nuts (20 g)", "diet": "vegan", "allergens": ["nuts"], "kcal": 130, "p": 4, "c": 5, "f": 11},
+      {"id": "s08", "name": "Banana", "diet": "vegan", "allergens": [], "kcal": 105, "p": 1, "c": 27, "f": 0},
+      {"id": "s09", "name": "Buttermilk (1 glass)", "diet": "vegetarian", "allergens": ["dairy"], "kcal": 60, "p": 3, "c": 5, "f": 2},
+      {"id": "s10", "name": "Greek yogurt (small cup)", "diet": "vegetarian", "allergens": ["dairy"], "kcal": 100, "p": 9, "c": 6, "f": 3},
+      {"id": "s11", "name": "Grilled paneer cubes (50 g)", "diet": "vegetarian", "allergens": ["dairy"], "kcal": 135, "p": 9, "c": 2, "f": 10},
+      {"id": "s12", "name": "Boiled egg", "diet": "general", "allergens": ["egg"], "kcal": 70, "p": 6, "c": 1, "f": 5}
+    ],
+    "dinner": [
+      {"id": "d01", "name": "Moong dal khichdi with vegetables", "diet": "vegan", "allergens": [], "kcal": 380, "p": 14, "c": 62, "f": 7},
+      {"id": "d02", "name": "Lentil vegetable soup with multigrain bread", "diet": "vegan", "allergens": ["gluten"], "kcal": 320, "p": 15, "c": 50, "f": 6},
+      {"id": "d03", "name": "Tofu vegetable curry with quinoa", "diet": "vegan", "allergens": ["soy"], "kcal": 400, "p": 22, "c": 42, "f": 15},
+      {"id": "d04", "name": "Mixed vegetable curry with 2 bajra rotis", "diet": "vegan", "allergens": [], "kcal": 360, "p": 10, "c": 58, "f": 9},
+      {"id": "d05", "name": "Baingan bharta with 2 rotis", "diet": "vegan", "allergens": ["gluten"], "kcal": 340, "p": 9, "c": 52, "f": 11},
+      {"id": "d06", "name": "Masoor dal with brown rice", "diet": "vegan", "allergens": [], "kcal": 390, "p": 18, "c": 68, "f": 5},
+      {"id": "d07", "name": "Palak paneer with 2 rotis", "diet": "vegetarian", "allergens": ["dairy", "gluten"], "kcal": 500, "p": 22, "c": 46, "f": 24},
+      {"id": "d08", "name": "Paneer tikka with grilled vegetables", "diet": "vegetarian", "allergens": ["dairy"], "kcal": 380, "p": 24, "c": 14, "f": 26},
+      {"id": "d09", "name": "Grilled fish with roasted sweet potato", "diet": "general", "allergens": ["fish"], "kcal": 430, "p": 34, "c": 32, "f": 18},
+      {"id": "d10", "name": "Chicken tikka with mint salad and 1 roti", "diet": "general", "allergens": ["gluten"], "kcal": 420, "p": 36, "c": 28, "f": 16},
+      {"id": "d11", "name": "Egg bhurji with 2 rotis", "diet": "general", "allergens": ["egg", "gluten"], "kcal": 440, "p": 22, "c": 44, "f": 19}
+    ]
+  },
+  "sides": [
+    {"id": "x01", "name": "Green salad", "diet": "vegan", "allergens": [], "kcal": 35, "p": 2, "c": 6, "f": 0, "meals": ["lunch", "dinner"]},
+    {"id": "x02", "name": "Sauteed greens", "diet": "vegan", "allergens": [], "kcal": 60, "p": 3, "c": 7, "f": 3, "meals": ["lunch", "dinner"]},
+    {"id": "x03", "name": "Seasonal fruit (1 portion)", "diet": "vegan", "allergens": [], "kcal": 80, "p": 1, "c": 20, "f": 0, "meals": ["breakfast", "lunch", "dinner"]},
+    {"id": "x04", "name": "Boiled chickpea salad", "diet": "vegan", "allergens": [], "kcal": 160, "p": 9, "c": 27, "f": 3, "meals": ["lunch", "dinner"]},
+    {"id": "x05", "name": "Plain curd (1 small bowl)", "diet": "vegetarian", "allergens": ["dairy"], "kcal": 70, "p": 4, "c": 5, "f": 4, "meals": ["lunch", "dinner"]},
+    {"id": "x06", "name": "Handful of nuts", "diet": "vegan", "allergens": ["nuts"], "kcal": 130, "p": 4, "c": 5, "f": 11, "meals": ["breakfast", "snack"]}
+  ]
+}

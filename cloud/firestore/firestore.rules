@@ -1,0 +1,35 @@
+// Firestore Security Rules (only relevant when DB_BACKEND=firestore).
+// Enforces user isolation at the database layer, in addition to the backend's own checks.
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function ownsResource(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    match /users/{userId} {
+      allow read, update: if ownsResource(userId);
+      allow create: if false; // user docs are created only by the trusted backend (Admin SDK)
+      allow delete: if false;
+    }
+
+    match /diet_plans/{planId} {
+      allow read, delete: if isSignedIn() && resource.data.user_id == request.auth.uid;
+      allow create: if false; // written by backend via Admin SDK, which bypasses these rules;
+                              // kept false here so client SDKs can never write plans directly
+    }
+
+    match /user_files/{fileId} {
+      allow read, delete: if isSignedIn() && resource.data.user_id == request.auth.uid;
+      allow create: if false;
+    }
+
+    match /user_emails/{emailHash} {
+      allow read, write: if false; // internal uniqueness index, backend (Admin SDK) only
+    }
+  }
+}

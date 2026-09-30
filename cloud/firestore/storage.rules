@@ -1,0 +1,10 @@
+// Firebase Storage Security Rules (only relevant when STORAGE_BACKEND=firebase).
+// Objects are stored under users/{uid}/... so each user can only touch their own prefix.
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /users/{userId}/{allPaths=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
