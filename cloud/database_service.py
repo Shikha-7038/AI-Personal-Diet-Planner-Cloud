@@ -347,8 +347,10 @@ class FirestoreDatabase(DatabaseService):
         return True
 
 
-def build_database(backend: str, sqlite_path: str = "data/diet_planner.db",
-                   credentials_path=None, storage_bucket=None) -> DatabaseService:
+def build_database(backend, sqlite_path="data/diet_planner.db", credentials_path=None, storage_bucket=None):
+    if backend == "supabase":
+        from cloud.supabase_service import SupabaseDatabase
+        return SupabaseDatabase()
     if backend == "firestore":
         return FirestoreDatabase(credentials_path, storage_bucket)
     return LocalDatabase(sqlite_path)

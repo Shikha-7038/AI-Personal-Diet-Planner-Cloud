@@ -101,8 +101,10 @@ class FirebaseStorage(StorageService):
             raise CloudServiceError("Could not delete file from cloud storage") from exc
 
 
-def build_storage(backend: str, local_dir: str = "data/storage", credentials_path=None,
-                  storage_bucket=None) -> StorageService:
+def build_storage(backend, local_dir="data/storage", credentials_path=None, storage_bucket=None):
+    if backend == "supabase":
+        from cloud.supabase_service import SupabaseStorage
+        return SupabaseStorage()
     if backend == "firebase":
         return FirebaseStorage(credentials_path, storage_bucket)
     return LocalStorage(local_dir)
